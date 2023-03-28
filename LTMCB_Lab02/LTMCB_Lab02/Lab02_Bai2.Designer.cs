@@ -127,7 +127,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(149, 399);
+            this.textBox3.Location = new System.Drawing.Point(149, 287);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(167, 26);
@@ -140,14 +140,16 @@
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(167, 26);
             this.textBox4.TabIndex = 10;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(149, 287);
+            this.textBox5.Location = new System.Drawing.Point(149, 399);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(167, 26);
             this.textBox5.TabIndex = 11;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // button2
             // 
