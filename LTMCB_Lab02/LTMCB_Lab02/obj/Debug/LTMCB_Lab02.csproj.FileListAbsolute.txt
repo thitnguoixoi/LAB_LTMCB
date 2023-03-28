@@ -9,3 +9,4 @@ F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.GenerateReso
 F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.CoreCompileInputs.cache
 F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.exe
 F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.pdb
+F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Lab02_Bai2.resources
