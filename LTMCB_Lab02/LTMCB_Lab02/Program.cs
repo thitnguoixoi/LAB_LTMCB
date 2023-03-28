@@ -16,7 +16,7 @@ namespace LTMCB_Lab02
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Lab02_Bai2());
+            Application.Run(new Lab02_Bai3());
         }
     }
 }
