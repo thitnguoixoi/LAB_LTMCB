@@ -1,0 +1,11 @@
+F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\bin\Debug\LTMCB_Lab02.exe.config
+F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\bin\Debug\LTMCB_Lab02.exe
+F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\bin\Debug\LTMCB_Lab02.pdb
+F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.AssemblyReference.cache
+F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.SuggestedBindingRedirects.cache
+F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Lab02_Bai1.resources
+F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Properties.Resources.resources
+F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.GenerateResource.cache
+F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.CoreCompileInputs.cache
+F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.exe
+F:\LTMCB\LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.pdb
