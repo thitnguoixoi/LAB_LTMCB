@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LAB_MCB\\LTMCB_Lab01\\VuiKo\\VuiKo.csproj": {}
+    "D:\\LAB_MCB\\LAB_LTMCB\\LTMCB_Lab01\\VuiKo\\VuiKo.csproj": {}
   },
   "projects": {
-    "D:\\LAB_MCB\\LTMCB_Lab01\\VuiKo\\VuiKo.csproj": {
+    "D:\\LAB_MCB\\LAB_LTMCB\\LTMCB_Lab01\\VuiKo\\VuiKo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LAB_MCB\\LTMCB_Lab01\\VuiKo\\VuiKo.csproj",
+        "projectUniqueName": "D:\\LAB_MCB\\LAB_LTMCB\\LTMCB_Lab01\\VuiKo\\VuiKo.csproj",
         "projectName": "VuiKo",
-        "projectPath": "D:\\LAB_MCB\\LTMCB_Lab01\\VuiKo\\VuiKo.csproj",
+        "projectPath": "D:\\LAB_MCB\\LAB_LTMCB\\LTMCB_Lab01\\VuiKo\\VuiKo.csproj",
         "packagesPath": "C:\\Users\\vanlo\\.nuget\\packages\\",
-        "outputPath": "D:\\LAB_MCB\\LTMCB_Lab01\\VuiKo\\obj\\",
+        "outputPath": "D:\\LAB_MCB\\LAB_LTMCB\\LTMCB_Lab01\\VuiKo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
