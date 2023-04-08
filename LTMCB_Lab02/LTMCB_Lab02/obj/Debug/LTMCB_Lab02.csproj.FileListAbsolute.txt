@@ -23,3 +23,17 @@ D:\labmcb\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.CoreCom
 D:\labmcb\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.exe
 D:\labmcb\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.pdb
 D:\labmcb\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Lab02_Bai3.resources
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\bin\Debug\LTMCB_Lab02.exe.config
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\bin\Debug\LTMCB_Lab02.exe
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\bin\Debug\LTMCB_Lab02.pdb
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.AssemblyReference.cache
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.SuggestedBindingRedirects.cache
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Lab02.resources
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Lab02_Bai1.resources
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Lab02_Bai2.resources
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Lab02_Bai3.resources
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Properties.Resources.resources
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.GenerateResource.cache
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.CoreCompileInputs.cache
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.exe
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.pdb
