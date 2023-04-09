@@ -20,7 +20,7 @@ namespace LTMCB_Lab02
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
+            /*(OpenFileDialog ofd = new OpenFileDialog();
             ofd.ShowDialog();
             FileStream fs = new FileStream(ofd.FileName, FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(fs);
@@ -28,7 +28,7 @@ namespace LTMCB_Lab02
             richTextBox1.Text = content;
             int num1, num2;  // input number
             char op;  // operator
-            string textInLines[] = File.ReadAllLines(fs);
+            string textInLines[] = File.ReadAllLines(fs);*/
 
 
         }

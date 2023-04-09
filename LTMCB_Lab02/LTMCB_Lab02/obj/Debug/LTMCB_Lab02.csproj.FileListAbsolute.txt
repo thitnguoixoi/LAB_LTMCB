@@ -37,3 +37,4 @@ F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.Generate
 F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.csproj.CoreCompileInputs.cache
 F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.exe
 F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.pdb
+D:\labmcb\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Lab02.resources

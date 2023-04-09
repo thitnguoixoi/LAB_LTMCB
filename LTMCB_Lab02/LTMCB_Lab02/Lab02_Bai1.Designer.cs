@@ -38,9 +38,10 @@ namespace LTMCB_Lab02
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(38, 51);
+            this.button1.Location = new System.Drawing.Point(25, 33);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 65);
+            this.button1.Size = new System.Drawing.Size(89, 42);
             this.button1.TabIndex = 0;
             this.button1.Text = "Đọc file";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@ namespace LTMCB_Lab02
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(38, 161);
+            this.button2.Location = new System.Drawing.Point(25, 105);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(133, 65);
+            this.button2.Size = new System.Drawing.Size(89, 42);
             this.button2.TabIndex = 1;
             this.button2.Text = "Ghi file";
             this.button2.UseVisualStyleBackColor = true;
@@ -58,17 +60,20 @@ namespace LTMCB_Lab02
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(205, 51);
+            this.richTextBox1.Location = new System.Drawing.Point(137, 33);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(329, 339);
+            this.richTextBox1.Size = new System.Drawing.Size(221, 222);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(38, 275);
+            this.button3.Location = new System.Drawing.Point(25, 179);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(133, 65);
+            this.button3.Size = new System.Drawing.Size(89, 42);
             this.button3.TabIndex = 3;
             this.button3.Text = "Thoát";
             this.button3.UseVisualStyleBackColor = true;
@@ -76,13 +81,14 @@ namespace LTMCB_Lab02
             // 
             // Lab02_Bai1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 402);
+            this.ClientSize = new System.Drawing.Size(364, 261);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Lab02_Bai1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

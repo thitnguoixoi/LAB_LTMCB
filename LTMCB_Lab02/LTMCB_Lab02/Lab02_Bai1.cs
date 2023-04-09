@@ -22,13 +22,14 @@ namespace LTMCB_Lab02
         {
 
         }
-
+        string path;
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.ShowDialog();
             FileStream fs = new FileStream(ofd.FileName, FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(fs);
+            path = fs.Name.ToString();
             string content = sr.ReadToEnd();
             richTextBox1.Text = content;
             fs.Close();
@@ -37,7 +38,8 @@ namespace LTMCB_Lab02
         {
             string upcasedText = richTextBox1.Text.ToUpper();
             richTextBox1.Text = upcasedText;
-            string path = "F:\\LTMCB\\LAB02\\filelist\\output.txt";
+            path = path.Replace("input.txt", "output.txt");
+            File.WriteAllText(path, string.Empty);
             using (StreamWriter sw = File.AppendText(path))
             {
                 sw.Write(upcasedText);
@@ -47,6 +49,11 @@ namespace LTMCB_Lab02
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
