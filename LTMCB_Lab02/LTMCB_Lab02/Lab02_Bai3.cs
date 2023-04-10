@@ -28,8 +28,6 @@ namespace LTMCB_Lab02
             string content = sr.ReadToEnd();
             richTextBox1.Text = content;
             fs.Close();
-
-
         }
 
         private void button3_Click(object sender, EventArgs e)

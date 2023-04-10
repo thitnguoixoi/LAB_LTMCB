@@ -39,3 +39,5 @@ F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.exe
 F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.pdb
 D:\labmcb\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Lab02.resources
 D:\labmcb\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Lab02_Bai5.resources
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Lab02_Bai5.resources
+F:\LTMCB\LAB_LTMCB\LTMCB_Lab02\LTMCB_Lab02\obj\Debug\LTMCB_Lab02.Lab02_Bai4.resources
