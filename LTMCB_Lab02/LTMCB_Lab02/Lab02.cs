@@ -22,14 +22,34 @@ namespace LTMCB_Lab02
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Lab02_Bai1 Bai = new Lab02_Bai1();
+            Bai.ShowDialog();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Lab02_Bai2 Bai = new Lab02_Bai2();
+            Bai.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Lab02_Bai3 Bai = new Lab02_Bai3();
+            Bai.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Lab02_Bai4 Bai = new Lab02_Bai4();
+            Bai.ShowDialog();
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Lab02_Bai5 Bai = new Lab02_Bai5();
+            Bai.ShowDialog();
         }
     }
 }

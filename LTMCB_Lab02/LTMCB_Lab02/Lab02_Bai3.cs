@@ -17,18 +17,17 @@ namespace LTMCB_Lab02
         {
             InitializeComponent();
         }
-
+        string path;
         private void button1_Click(object sender, EventArgs e)
         {
-            /*(OpenFileDialog ofd = new OpenFileDialog();
+            OpenFileDialog ofd = new OpenFileDialog();
             ofd.ShowDialog();
             FileStream fs = new FileStream(ofd.FileName, FileMode.OpenOrCreate);
             StreamReader sr = new StreamReader(fs);
+            path = fs.Name.ToString();
             string content = sr.ReadToEnd();
             richTextBox1.Text = content;
-            int num1, num2;  // input number
-            char op;  // operator
-            string textInLines[] = File.ReadAllLines(fs);*/
+            fs.Close();
 
 
         }
@@ -40,7 +39,36 @@ namespace LTMCB_Lab02
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            path = path.Replace("input.txt", "output.txt");
+            File.WriteAllText(path, string.Empty);
+            string[] inputArray = richTextBox1.Text.Split('\n');
+            string outputContent = "";
+            foreach (string s in inputArray)
+            {
+                string[] parts = s.Split(' ');
+                int num1 = int.Parse(parts[0]);
+                int num2 = int.Parse(parts[2]);
+                switch (parts[1])
+                {
+                    case "+":
+                        outputContent += num1 + " + " + num2 + " = " + (num1 + num2) + "\n";
+                        break;
+                    case "-":
+                        outputContent += num1 + " - " + num2 + " = " + (num1 - num2) + "\n";
+                        break;
+                    case "*":
+                        outputContent += num1 + " * " + num2 + " = " + (num1 * num2) + "\n";
+                        break;
+                    case "/":
+                        outputContent += num1 + " / " + num2 + " = " + (num1 / num2) + "\n";
+                        break;
+                }
+            }
+            richTextBox1.Text = outputContent;
+            using (StreamWriter sw = File.AppendText(path))
+            {
+                sw.Write(outputContent);
+            }
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
