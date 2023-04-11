@@ -18,7 +18,7 @@ namespace LTMCB_Lab02
 {
     public partial class Lab02_Bai4 : Form
     {
-        string path = "F:\\LTMCB\\LAB02\\filelist\\input.txt";
+        string path = "D:\\labmcb\\input.txt";
         List<HocVien> dsHocVien = new List<HocVien>();
         BinaryFormatter formatter = new BinaryFormatter();
 
@@ -74,6 +74,7 @@ namespace LTMCB_Lab02
                 }
             }
             path = path.Replace("input.txt", "output.txt");
+            File.WriteAllText(path, string.Empty);
             foreach (HocVien hocVien in listHV)
             {
                 File.AppendAllText(path, hocVien.ToString() + Environment.NewLine + hocVien.DTB + Environment.NewLine);
@@ -131,6 +132,8 @@ namespace LTMCB_Lab02
 
         private void button5_Click(object sender, EventArgs e)  //save data
         {
+            path = path.Replace("output.txt", "input.txt");
+            File.WriteAllText(path, string.Empty);
             BinaryFormatter formatter = new BinaryFormatter();
             using (FileStream fs = new FileStream("data.bin", FileMode.Create))
             {
