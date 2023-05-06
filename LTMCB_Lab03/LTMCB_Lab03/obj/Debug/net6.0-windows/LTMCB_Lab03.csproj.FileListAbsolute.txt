@@ -1,0 +1,17 @@
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\bin\Debug\net6.0-windows\LTMCB_Lab03.exe
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\bin\Debug\net6.0-windows\LTMCB_Lab03.deps.json
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\bin\Debug\net6.0-windows\LTMCB_Lab03.runtimeconfig.json
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\bin\Debug\net6.0-windows\LTMCB_Lab03.dll
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\bin\Debug\net6.0-windows\LTMCB_Lab03.pdb
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.csproj.AssemblyReference.cache
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai2.resources
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.csproj.GenerateResource.cache
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.GeneratedMSBuildEditorConfig.editorconfig
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.AssemblyInfoInputs.cache
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.AssemblyInfo.cs
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.csproj.CoreCompileInputs.cache
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.dll
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\refint\LTMCB_Lab03.dll
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.pdb
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.genruntimeconfig.cache
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\ref\LTMCB_Lab03.dll
