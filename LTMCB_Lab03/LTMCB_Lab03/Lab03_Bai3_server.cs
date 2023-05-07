@@ -65,13 +65,13 @@ namespace LTMCB_Lab03
                     isConnected = false;
                 }
             }
-            server.Stop();
             richTextBox1.AppendText("disconnected\n");
         }
 
 
         private void button2_Click(object sender, EventArgs e)
         {
+            server.Stop();
             listenerThread.Join();
             this.Close();
         }

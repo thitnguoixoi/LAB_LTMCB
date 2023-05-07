@@ -24,12 +24,14 @@ namespace LTMCB_Lab03
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Lab03_Bai3_server().Show();
+            Lab03_Bai3_server a = new Lab03_Bai3_server();
+            a.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new Lab03_Bai3_client().Show();
+            Lab03_Bai3_client a = new Lab03_Bai3_client();
+            a.Show();
         }
     }
 }

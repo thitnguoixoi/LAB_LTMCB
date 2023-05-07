@@ -16,5 +16,17 @@ namespace LTMCB_Lab03
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Lab03_Bai4_server a = new Lab03_Bai4_server();
+            a.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Lab03_Bai4_server a = new Lab03_Bai4_server();
+            a.Show();
+        }
     }
 }
