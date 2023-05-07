@@ -11,12 +11,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Http;
 using static System.Net.Mime.MediaTypeNames;
+using System.IO;
 
 namespace LTMCB_Lab03
 {
     public partial class Lab03_Bai4_client : Form
     {
-        public Lab03_Bai4_client()  
+        public Lab03_Bai4_client()
         {
             InitializeComponent();
         }
@@ -25,6 +26,7 @@ namespace LTMCB_Lab03
         NetworkStream networkStream;
         TcpClient tcpClient;
         Thread receiveThread;
+        bool shouldStop = false;
 
         private void Lab03_Bai4_client_Load(object sender, EventArgs e)
         {
@@ -37,13 +39,12 @@ namespace LTMCB_Lab03
         }
         private void ReceiveData()
         {
-            bool IsConnected = tcpClient.Connected;
-            while (IsConnected)
+            while (!shouldStop)
             {
-                StreamReader reader = new StreamReader(networkStream);
-                string message = reader.ReadLine();
+                byte[] buffer = new byte[tcpClient.ReceiveBufferSize];
+                int bytesRead = networkStream.Read(buffer, 0, tcpClient.ReceiveBufferSize);
+                string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
                 AppendTextToRichTextBox1(message);
-                IsConnected = tcpClient.Connected;
             }
         }
 
@@ -67,24 +68,18 @@ namespace LTMCB_Lab03
             user.Trim();
             string msg = richTextBox3.Text.ToString();
             msg.Trim();
-            byte[] data = System.Text.Encoding.UTF8.GetBytes(user + ": " +msg+"\n");
+            byte[] data = System.Text.Encoding.UTF8.GetBytes(user + ": " + msg);
             networkStream.Write(data, 0, data.Length);
         }
-
-
-        private void button2_Click(object sender, EventArgs e)
+        private void Lab03_Bai4_client_FormClosing(object sender, FormClosingEventArgs e)
         {
+            shouldStop = true;
+            receiveThread.Join();
             string user = richTextBox2.Text.ToString();
             user.Trim();
-            byte[] data = System.Text.Encoding.UTF8.GetBytes(user + " quited\n");
+            byte[] data = System.Text.Encoding.UTF8.GetBytes(user + " quitted");
             networkStream.Write(data, 0, data.Length);
-            networkStream.Close();
-            richTextBox1.AppendText("closed");
             tcpClient.Close();
-            richTextBox1.AppendText("closed");
-            receiveThread.Join();
-            richTextBox1.AppendText("joined");
-            this.Close();
         }
     }
 }

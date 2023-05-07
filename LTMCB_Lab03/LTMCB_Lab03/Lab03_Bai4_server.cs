@@ -23,7 +23,7 @@ namespace LTMCB_Lab03
         Thread listenerThread;
         List<Thread> clientThreads = new List<Thread>();
         List<Socket> clients = new List<Socket>();
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -39,75 +39,43 @@ namespace LTMCB_Lab03
         {
             while (true)
             {
-                try
+                Socket clientSocket = server.AcceptSocket();
+                clients.Add(clientSocket);
+                IPEndPoint clientEndPoint = (IPEndPoint)clientSocket.RemoteEndPoint;
+                string clientInfo = string.Format("Client {0}:{1} connected", clientEndPoint.Address, clientEndPoint.Port);
+                richTextBox1.AppendText(clientInfo + "\n");
+                CheckForIllegalCrossThreadCalls = false;
+                Thread clientThread = new Thread(() =>
                 {
-                    Socket clientSocket = server.AcceptSocket();
-                    clients.Add(clientSocket);
-                    IPEndPoint clientEndPoint = (IPEndPoint)clientSocket.RemoteEndPoint;
-                    string clientInfo = string.Format("Client {0}:{1} connected", clientEndPoint.Address, clientEndPoint.Port);
-                    richTextBox1.AppendText(clientInfo + "\n");
-
-                    CheckForIllegalCrossThreadCalls = false;
-                    Thread clientThread = new Thread(() =>
+                    while (true)
                     {
-                        bool isConnected = true;
-                        while (isConnected)
+                        try
                         {
-                            try
-                            {   
-                                byte[] buffer = new byte[1024];
-                                int bytesRead = clientSocket.Receive(buffer);
-                                string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                            byte[] buffer = new byte[1024];
+                            int bytesRead = clientSocket.Receive(buffer);
+                            string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
 
-                                richTextBox1.AppendText(message);
+                            richTextBox1.AppendText(message + "\n");
 
-                                if (bytesRead == 0)
-                                {
-                                    // Kết nối đã bị ngắt
-                                    isConnected = false;
-                                    clientSocket.Shutdown(SocketShutdown.Both);
-                                    clientSocket.Close();
-                                    clients.Remove(clientSocket);
-                                    richTextBox1.AppendText("Disconnected\n");
-                                }
-                                else
-                                {
-                                    Broadcast(message);
-                                }
-                            }
-                            catch (SocketException ex)
+                            if (message.Contains("quitted"))
                             {
-                                if (ex.SocketErrorCode == SocketError.ConnectionReset || ex.SocketErrorCode == SocketError.TimedOut)
-                                {
-                                    // Handle the case where the client abruptly closes the connection
-                                    isConnected = false;
-                                    clientSocket.Shutdown(SocketShutdown.Both);
-                                    clientSocket.Close();
-                                    clients.Remove(clientSocket);
-                                    richTextBox1.AppendText("Disconnected\n");
-                                }
-                                else
-                                {
-                                    // Rethrow any other socket exceptions
-                                    throw;
-                                }
+                                // Kết nối đã bị ngắt
+                                clientSocket.Close();
+                                clients.Remove(clientSocket);
+                                richTextBox1.AppendText("Disconnected\n");
+                                break;
                             }
-
+                            Broadcast(message);
                         }
-                    });
-                    clientThreads.Add(clientThread);
-                    clientThread.IsBackground = true;
-                    clientThread.Start();
+                        catch (Exception)
+                        {
+                            break;
+                        }
 
-                }
-                catch (SocketException ex)
-                {
-                    if (ex.SocketErrorCode == SocketError.Interrupted)
-                    {
-                        break;
                     }
-                }
-
+                });
+                clientThreads.Add(clientThread);
+                clientThread.Start();
             }
         }
         private void Broadcast(string message)
@@ -115,17 +83,12 @@ namespace LTMCB_Lab03
             byte[] buffer = Encoding.UTF8.GetBytes(message);
             foreach (Socket clientSocket in clients)
             {
-                if (clientSocket != null)
-                {
-                    clientSocket.Send(buffer);
-                    richTextBox1.AppendText("sent\n");
-                }
+                clientSocket.Send(buffer);
             }
         }
-
-
-        private void button2_Click(object sender, EventArgs e)
+        private void Lab03_Bai4_server_FormClosing(object sender, FormClosingEventArgs e)
         {
+            server.Stop();
             foreach (Thread clientThread in clientThreads)
             {
                 if (clientThread != null)
@@ -133,9 +96,7 @@ namespace LTMCB_Lab03
                     clientThread.Join();
                 }
             }
-            server.Stop();
             listenerThread.Join();
-            this.Close();
         }
     }
 }

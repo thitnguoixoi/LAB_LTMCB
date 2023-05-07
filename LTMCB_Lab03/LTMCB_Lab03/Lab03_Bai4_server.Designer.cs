@@ -30,7 +30,6 @@
         {
             button1 = new Button();
             richTextBox1 = new RichTextBox();
-            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -51,26 +50,16 @@
             richTextBox1.TabIndex = 1;
             richTextBox1.Text = "";
             // 
-            // button2
-            // 
-            button2.Location = new Point(655, 286);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 2;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
             // Lab03_Bai4_server
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 710);
-            Controls.Add(button2);
             Controls.Add(richTextBox1);
             Controls.Add(button1);
             Name = "Lab03_Bai4_server";
             Text = "Lab03_Bai4_server";
+            FormClosing += Lab03_Bai4_server_FormClosing;
             ResumeLayout(false);
         }
 
@@ -78,6 +67,5 @@
 
         private Button button1;
         private RichTextBox richTextBox1;
-        private Button button2;
     }
 }

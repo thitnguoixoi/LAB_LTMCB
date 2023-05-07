@@ -25,6 +25,7 @@ namespace LTMCB_Lab03
         private void button1_Click(object sender, EventArgs e)
         {
             Lab03_Bai3_server a = new Lab03_Bai3_server();
+            button1.Enabled = false;
             a.Show();
         }
 

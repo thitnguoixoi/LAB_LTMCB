@@ -36,13 +36,12 @@ namespace LTMCB_Lab03
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Lab03_Bai3_client_FormClosed(object sender, FormClosedEventArgs e)
         {
             byte[] data = System.Text.Encoding.ASCII.GetBytes("quit\n");
             networkStream.Write(data, 0, data.Length);
             networkStream.Close();
             tcpClient.Close();
-            this.Close();
         }
     }
 }
