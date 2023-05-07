@@ -1,6 +1,6 @@
 ﻿namespace LTMCB_Lab03
 {
-    partial class Lab03_Bai3
+    partial class Lab03_Bai3_server
     {
         /// <summary>
         /// Required designer variable.
@@ -28,45 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
+            richTextBox1 = new RichTextBox();
             button1 = new Button();
             button2 = new Button();
             SuspendLayout();
             // 
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(0, 0);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(295, 292);
+            richTextBox1.TabIndex = 0;
+            richTextBox1.Text = "";
+            // 
             // button1
             // 
-            button1.Location = new Point(133, 176);
+            button1.Location = new Point(347, 12);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
+            button1.TabIndex = 1;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(403, 176);
+            button2.Location = new Point(347, 216);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
+            button2.TabIndex = 2;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // Lab03_Bai3
+            // Lab03_Bai3_server
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
             Controls.Add(button1);
-            Name = "Lab03_Bai3";
-            Text = "Lab03_Bai3";
-            Load += Lab03_Bai3_Load;
+            Controls.Add(richTextBox1);
+            Name = "Lab03_Bai3_server";
+            Text = "Lab03_Bai3_server";
+            Load += Lab03_Bai3_server_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
+        private RichTextBox richTextBox1;
         private Button button1;
         private Button button2;
     }

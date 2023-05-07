@@ -1,6 +1,6 @@
 ﻿namespace LTMCB_Lab03
 {
-    partial class Lab03_Bai3
+    partial class Lab03
     {
         /// <summary>
         /// Required designer variable.
@@ -30,11 +30,14 @@
         {
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(133, 176);
+            button1.Location = new Point(201, 111);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
@@ -44,7 +47,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(403, 176);
+            button2.Location = new Point(439, 111);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 1;
@@ -52,16 +55,49 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // Lab03_Bai3
+            // button3
+            // 
+            button3.Location = new Point(201, 238);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 2;
+            button3.Text = "button3";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(439, 238);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 3;
+            button4.Text = "button4";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(323, 304);
+            button5.Name = "button5";
+            button5.Size = new Size(75, 23);
+            button5.TabIndex = 4;
+            button5.Text = "button5";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // Lab03
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Name = "Lab03_Bai3";
-            Text = "Lab03_Bai3";
-            Load += Lab03_Bai3_Load;
+            Name = "Lab03";
+            Text = "Lab03";
+            Load += Lab03_Load;
             ResumeLayout(false);
         }
 
@@ -69,5 +105,8 @@
 
         private Button button1;
         private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
     }
 }
