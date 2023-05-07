@@ -16,5 +16,24 @@ namespace LTMCB_Lab03
         {
             InitializeComponent();
         }
+
+        private void Lab03_Bai1_Load(object sender, EventArgs e)
+        {
+           // CheckForlllegalCrossThreadCalls = false;
+            Thread thdUDPServer = new Thread(new Thread Start(serverThread()));
+            thdUDPServer.Start();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Lab03_Bai1_client cl = new Lab03_Bai1_client();
+            cl.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Lab03_Bai1_server sv = new Lab03_Bai1_server();
+            sv.Show();
+        }
     }
 }

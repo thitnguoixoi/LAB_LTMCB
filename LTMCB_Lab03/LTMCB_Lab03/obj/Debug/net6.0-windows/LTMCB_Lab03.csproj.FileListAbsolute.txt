@@ -23,3 +23,28 @@ D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-window
 D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai4.resources
 D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai4_client.resources
 D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai4_server.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\bin\Debug\net6.0-windows\LTMCB_Lab03.exe
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\bin\Debug\net6.0-windows\LTMCB_Lab03.deps.json
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\bin\Debug\net6.0-windows\LTMCB_Lab03.runtimeconfig.json
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\bin\Debug\net6.0-windows\LTMCB_Lab03.dll
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\bin\Debug\net6.0-windows\LTMCB_Lab03.pdb
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.csproj.AssemblyReference.cache
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai1.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai2.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai3.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai3_client.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai3_server.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai4.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai4_client.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai4_server.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.csproj.GenerateResource.cache
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.AssemblyInfoInputs.cache
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.AssemblyInfo.cs
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.csproj.CoreCompileInputs.cache
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.dll
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\refint\LTMCB_Lab03.dll
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.pdb
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.genruntimeconfig.cache
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\ref\LTMCB_Lab03.dll

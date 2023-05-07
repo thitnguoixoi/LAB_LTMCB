@@ -28,12 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Lab03_Bai1";
+            button1 = new Button();
+            button2 = new Button();
+            SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(63, 103);
+            button1.Name = "button1";
+            button1.Size = new Size(140, 57);
+            button1.TabIndex = 0;
+            button1.Text = "UDP Client";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(324, 103);
+            button2.Name = "button2";
+            button2.Size = new Size(140, 57);
+            button2.TabIndex = 0;
+            button2.Text = "UDP Client";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // Lab03_Bai1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(540, 263);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Name = "Lab03_Bai1";
+            Text = "Lab03_Bai1";
+            Load += Lab03_Bai1_Load;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button button1;
+        private Button button2;
     }
 }

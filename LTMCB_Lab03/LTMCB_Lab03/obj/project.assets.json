@@ -8,24 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\vanlo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\hungh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\labmcb\\thitnguoixoi\\LAB_LTMCB\\LTMCB_Lab03\\LTMCB_Lab03\\LTMCB_Lab03.csproj",
+      "projectUniqueName": "D:\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Nam2\\Ky2\\LTMCB\\LAB\\LAB_LTMCB\\LTMCB_Lab03\\LTMCB_Lab03\\LTMCB_Lab03.csproj",
       "projectName": "LTMCB_Lab03",
-      "projectPath": "D:\\labmcb\\thitnguoixoi\\LAB_LTMCB\\LTMCB_Lab03\\LTMCB_Lab03\\LTMCB_Lab03.csproj",
-      "packagesPath": "C:\\Users\\vanlo\\.nuget\\packages\\",
-      "outputPath": "D:\\labmcb\\thitnguoixoi\\LAB_LTMCB\\LTMCB_Lab03\\LTMCB_Lab03\\obj\\",
+      "projectPath": "D:\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Nam2\\Ky2\\LTMCB\\LAB\\LAB_LTMCB\\LTMCB_Lab03\\LTMCB_Lab03\\LTMCB_Lab03.csproj",
+      "packagesPath": "C:\\Users\\hungh\\.nuget\\packages\\",
+      "outputPath": "D:\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Nam2\\Ky2\\LTMCB\\LAB\\LAB_LTMCB\\LTMCB_Lab03\\LTMCB_Lab03\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\vanlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\hungh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
