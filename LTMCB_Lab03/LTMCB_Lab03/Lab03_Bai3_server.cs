@@ -25,7 +25,9 @@ namespace LTMCB_Lab03
         }
 
         private TcpListener server;
-        Thread listenerThread;
+        private Thread listenerThread;
+        private bool isRunning = true;
+
         private void button1_Click(object sender, EventArgs e)
         {
             server = new TcpListener(IPAddress.Loopback, 8080);
@@ -38,39 +40,45 @@ namespace LTMCB_Lab03
 
         private void ListenForClients()
         {
-            int bytesRecv = 0;
-            byte[] recv = new byte[1];
-            Socket clientSocket;
-            /*Socket listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            IPEndPoint ipepServer = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080);
-            listenerSocket.Bind(ipepServer);
-            listenerSocket.Listen(-1);*/
-            clientSocket = server.AcceptSocket();
-            richTextBox1.AppendText("connected\n");
-            bool isConnected = true;
-
-            while (isConnected)
+            while (isRunning)
             {
-                string text = "";
-                do
+                Socket clientSocket = null;
+                try
                 {
-                    bytesRecv = clientSocket.Receive(recv);
-                    text += Encoding.ASCII.GetString(recv);
-                } while (text[text.Length - 1] != '\n');
-                byte[] buffer = new byte[1024];
-                richTextBox1.AppendText(text);
-                if (clientSocket.Receive(buffer) == 0)
+                    clientSocket = server.AcceptSocket();
+                    bool isConnected = true;
+                    richTextBox1.AppendText("connected\n");
+
+                    while (isConnected && isRunning)
+                    {
+                        byte[] buffer = new byte[1024];
+                        int bytesRead = clientSocket.Receive(buffer);
+                        string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+                        richTextBox1.AppendText(message);
+
+                        if (bytesRead == 0)
+                        {
+                            // Kết nối đã bị ngắt
+                            isConnected = false;
+                        }
+                    }
+                    clientSocket.Close();
+                    richTextBox1.AppendText("disconnected\n");
+
+                }
+                catch (SocketException ex)
                 {
-                    // Kết nối đã bị ngắt
-                    isConnected = false;
+                    if (ex.SocketErrorCode == SocketError.Interrupted)
+                    {
+                        isRunning = false;
+                    }
                 }
             }
-            richTextBox1.AppendText("disconnected\n");
         }
-
 
         private void button2_Click(object sender, EventArgs e)
         {
+            isRunning = false;
             server.Stop();
             listenerThread.Join();
             this.Close();

@@ -22,7 +22,6 @@ namespace LTMCB_Lab03
 
         private void Lab03_Bai4_client_Load(object sender, EventArgs e)
         {
-
             tcpClient = new TcpClient();
             IPEndPoint iPEndPoint = new IPEndPoint(IPAddress.Loopback, 8080);
             tcpClient.Connect(iPEndPoint);
@@ -43,6 +42,7 @@ namespace LTMCB_Lab03
             networkStream.Write(data, 0, data.Length);
             networkStream.Close();
             tcpClient.Close();
+            this.Close();
         }
     }
 }
