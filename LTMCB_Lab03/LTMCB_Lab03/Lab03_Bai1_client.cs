@@ -31,7 +31,6 @@ namespace LTMCB_Lab03
             udpClient = new UdpClient();
             Byte[] sendBytes = Encoding.UTF8.GetBytes(message);
             udpClient.Send(sendBytes, sendBytes.Length, RemoteIpEndPoint);
-            richTextBox1.AppendText("sent");
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)

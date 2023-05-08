@@ -31,6 +31,7 @@
             button1 = new Button();
             textBox1 = new TextBox();
             richTextBox1 = new RichTextBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -60,11 +61,23 @@
             richTextBox1.TabIndex = 3;
             richTextBox1.Text = "";
             // 
+            // button2
+            // 
+            button2.Location = new Point(381, 31);
+            button2.Margin = new Padding(2);
+            button2.Name = "button2";
+            button2.Size = new Size(78, 34);
+            button2.TabIndex = 4;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Lab03_Bai1_server
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(553, 278);
+            Controls.Add(button2);
             Controls.Add(richTextBox1);
             Controls.Add(textBox1);
             Controls.Add(button1);
@@ -81,5 +94,6 @@
         private Button button1;
         private TextBox textBox1;
         private RichTextBox richTextBox1;
+        private Button button2;
     }
 }
