@@ -50,3 +50,5 @@ D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\ref\LTMCB_Lab03.dll
 D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai1_client.resources
 D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai1_server.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai1_client.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab03\LTMCB_Lab03\obj\Debug\net6.0-windows\LTMCB_Lab03.Lab03_Bai1_server.resources
