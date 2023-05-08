@@ -20,8 +20,8 @@ namespace LTMCB_Lab03
         private void Lab03_Bai1_Load(object sender, EventArgs e)
         {
            // CheckForlllegalCrossThreadCalls = false;
-            Thread thdUDPServer = new Thread(new Thread Start(serverThread()));
-            thdUDPServer.Start();
+            /*Thread thdUDPServer = new Thread(new Thread Start(serverThread()));
+            thdUDPServer.Start();*/
         }
 
         private void button1_Click(object sender, EventArgs e)

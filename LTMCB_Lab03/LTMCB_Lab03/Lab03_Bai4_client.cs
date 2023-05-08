@@ -23,28 +23,54 @@ namespace LTMCB_Lab03
         }
 
 
-        NetworkStream networkStream;
-        TcpClient tcpClient;
-        Thread receiveThread;
-        bool shouldStop = false;
+        private NetworkStream networkStream;
+        private TcpClient tcpClient;
+        private Thread receiveThread;
+        private IPEndPoint iPEndPoint;
+        private Thread UpdateUI;
+
 
         private void Lab03_Bai4_client_Load(object sender, EventArgs e)
         {
-            tcpClient = new TcpClient();
-            IPEndPoint iPEndPoint = new IPEndPoint(IPAddress.Loopback, 8080);
-            tcpClient.Connect(iPEndPoint);
-            networkStream = tcpClient.GetStream();
-            receiveThread = new Thread(ReceiveData);
-            receiveThread.Start();
+            try
+            {
+                tcpClient = new TcpClient();
+                iPEndPoint = new IPEndPoint(IPAddress.Loopback, 8080);
+                tcpClient.Connect(iPEndPoint);
+                networkStream = tcpClient.GetStream();
+                receiveThread = new Thread(ReceiveData);
+                receiveThread.Start();
+            }
+            catch (Exception)
+            {
+                tcpClient = null;
+                iPEndPoint = null;
+                this.Close();
+            }
         }
         private void ReceiveData()
         {
-            while (!shouldStop)
+            try
             {
-                byte[] buffer = new byte[tcpClient.ReceiveBufferSize];
-                int bytesRead = networkStream.Read(buffer, 0, tcpClient.ReceiveBufferSize);
-                string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-                AppendTextToRichTextBox1(message);
+                while (true)
+                {
+                    byte[] buffer = new byte[tcpClient.ReceiveBufferSize];
+                    int bytesRead = networkStream.Read(buffer, 0, tcpClient.ReceiveBufferSize);
+                    string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+                    UpdateUI = new Thread(() => UpdateUIThread(message));
+                    UpdateUI.Start();
+                    if (message == "server quit")
+                    {
+                        tcpClient.Close();
+                        this.Dispose();
+                        this.Close();
+                        break;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                this.Close();
             }
         }
 
@@ -59,7 +85,10 @@ namespace LTMCB_Lab03
                 richTextBox1.AppendText(text + "\n");
             }
         }
-
+        private void UpdateUIThread(string text)
+        {
+            AppendTextToRichTextBox1(text);
+        }
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -73,13 +102,16 @@ namespace LTMCB_Lab03
         }
         private void Lab03_Bai4_client_FormClosing(object sender, FormClosingEventArgs e)
         {
-            shouldStop = true;
-            receiveThread.Join();
             string user = richTextBox2.Text.ToString();
             user.Trim();
             byte[] data = System.Text.Encoding.UTF8.GetBytes(user + " quitted");
             networkStream.Write(data, 0, data.Length);
             tcpClient.Close();
+        }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

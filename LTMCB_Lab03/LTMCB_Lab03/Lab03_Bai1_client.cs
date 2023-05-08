@@ -16,5 +16,10 @@ namespace LTMCB_Lab03
         {
             InitializeComponent();
         }
+
+        private void Lab03_Bai1_client_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

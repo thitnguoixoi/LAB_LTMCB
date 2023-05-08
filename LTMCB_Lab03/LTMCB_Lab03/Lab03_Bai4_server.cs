@@ -37,45 +37,50 @@ namespace LTMCB_Lab03
 
         private void ListenForClients()
         {
-            while (true)
+            try
             {
-                Socket clientSocket = server.AcceptSocket();
-                clients.Add(clientSocket);
-                IPEndPoint clientEndPoint = (IPEndPoint)clientSocket.RemoteEndPoint;
-                string clientInfo = string.Format("Client {0}:{1} connected", clientEndPoint.Address, clientEndPoint.Port);
-                richTextBox1.AppendText(clientInfo + "\n");
-                CheckForIllegalCrossThreadCalls = false;
-                Thread clientThread = new Thread(() =>
+                while (true)
                 {
-                    while (true)
+                    Socket clientSocket = server.AcceptSocket();
+                    clients.Add(clientSocket);
+                    IPEndPoint clientEndPoint = (IPEndPoint)clientSocket.RemoteEndPoint;
+                    string clientInfo = string.Format("Client {0}:{1} connected", clientEndPoint.Address, clientEndPoint.Port);
+                    richTextBox1.AppendText(clientInfo + "\n");
+                    CheckForIllegalCrossThreadCalls = false;
+                    Thread clientThread = new Thread(() =>
                     {
-                        try
+                        while (clientSocket.Connected)
                         {
-                            byte[] buffer = new byte[1024];
-                            int bytesRead = clientSocket.Receive(buffer);
-                            string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                                byte[] buffer = new byte[1024];
+                                int bytesRead = clientSocket.Receive(buffer);
+                                string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
 
-                            richTextBox1.AppendText(message + "\n");
+                                richTextBox1.AppendText(message + "\n");
 
-                            if (message.Contains("quitted"))
-                            {
-                                // Kết nối đã bị ngắt
-                                clientSocket.Close();
-                                clients.Remove(clientSocket);
-                                richTextBox1.AppendText("Disconnected\n");
-                                break;
-                            }
-                            Broadcast(message);
+                                Broadcast(message);
+                                if (message.Contains("quitted"))
+                                {
+                                    // Kết nối đã bị ngắt
+                                    clientSocket.Close();
+                                    clientSocket=null;
+                                    clients.Remove(clientSocket);
+                                    richTextBox1.AppendText("Disconnected\n");
+                                    break;
+                                }
                         }
-                        catch (Exception)
-                        {
-                            break;
-                        }
-
-                    }
-                });
-                clientThreads.Add(clientThread);
-                clientThread.Start();
+                    });
+                    clientThread.IsBackground = true;
+                    clientThreads.Add(clientThread);
+                    clientThread.Start();
+                }
+            }
+            catch (Exception)
+            {
+                if (server != null)
+                {
+                    Broadcast("server quit");
+                    server.Stop();
+                }
             }
         }
         private void Broadcast(string message)
@@ -83,6 +88,7 @@ namespace LTMCB_Lab03
             byte[] buffer = Encoding.UTF8.GetBytes(message);
             foreach (Socket clientSocket in clients)
             {
+                if(clientSocket !=null) 
                 clientSocket.Send(buffer);
             }
         }

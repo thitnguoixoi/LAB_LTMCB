@@ -50,6 +50,7 @@
             richTextBox2.Size = new Size(100, 96);
             richTextBox2.TabIndex = 1;
             richTextBox2.Text = "";
+            richTextBox2.TextChanged += richTextBox2_TextChanged;
             // 
             // richTextBox3
             // 

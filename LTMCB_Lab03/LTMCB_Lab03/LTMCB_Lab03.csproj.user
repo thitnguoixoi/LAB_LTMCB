@@ -7,6 +7,12 @@
     <Compile Update="Lab03_Bai1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Lab03_Bai1_client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Lab03_Bai1_server.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Lab03_Bai2.cs">
       <SubType>Form</SubType>
     </Compile>
