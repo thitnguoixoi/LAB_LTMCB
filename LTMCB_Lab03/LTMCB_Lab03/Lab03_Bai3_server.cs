@@ -80,9 +80,19 @@ namespace LTMCB_Lab03
 
         private void Lab03_Bai3_server_FormClosed(object sender, FormClosedEventArgs e)
         {
-            isRunning = false;
-            server.Stop();
-            listenerThread.Join();
+            try
+            {
+                if (server != null)
+                {
+                    isRunning = false;
+                    server.Stop();
+                    listenerThread.Join();
+                }
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }

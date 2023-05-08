@@ -93,8 +93,6 @@ namespace LTMCB_Lab03
 
             catch
             {
-                MessageBox.Show("Đóng kết nối!");
-                this.Close();
             }
         }
         private void CloseClientConnection(Socket clientSocket)
@@ -123,19 +121,7 @@ namespace LTMCB_Lab03
         }
         private void Lab03_Bai4_server_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (server != null)
-            {
-                Broadcast("server quit");
-                server.Stop();
-            }
-
-            foreach (var item in clients.ToArray())
-            {
-                CloseClientConnection(item);
-            }
-
-            clients.Clear();
-            richTextBox1.Clear();
+            button2.PerformClick();
         }
 
         private void button2_Click(object sender, EventArgs e)

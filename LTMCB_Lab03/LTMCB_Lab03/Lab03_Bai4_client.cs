@@ -57,7 +57,7 @@ namespace LTMCB_Lab03
                 {
                     byte[] buffer = new byte[tcpClient.ReceiveBufferSize];
                     int bytesRead = networkStream.Read(buffer, 0, tcpClient.ReceiveBufferSize);
-                    string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+                    string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
                     if (message == "server quit")
                     {
                         tcpClient.Close();
