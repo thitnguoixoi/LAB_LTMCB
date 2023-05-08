@@ -23,15 +23,15 @@ namespace LTMCB_Lab03
         {
 
         }
-
+        UdpClient udpClient;
         private void button1_Click(object sender, EventArgs e)
         {
             IPEndPoint RemoteIpEndPoint = new IPEndPoint(IPAddress.Loopback, int.Parse(portTextBox.Text));
             string message = richTextBox1.Text;
-            UdpClient udpClient = new UdpClient();
+            udpClient = new UdpClient();
             Byte[] sendBytes = Encoding.UTF8.GetBytes(message);
-            udpClient.Send(sendBytes, sendBytes.Length, "127.0.0.1", RemoteIpEndPoint.Port);
-
+            udpClient.Send(sendBytes, sendBytes.Length, RemoteIpEndPoint);
+            richTextBox1.AppendText("sent");
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -42,6 +42,11 @@ namespace LTMCB_Lab03
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Lab03_Bai1_client_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try { udpClient.Close(); } catch (Exception) { }
         }
     }
 }

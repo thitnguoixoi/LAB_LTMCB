@@ -29,46 +29,48 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            listView1 = new ListView();
             textBox1 = new TextBox();
+            richTextBox1 = new RichTextBox();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(666, 44);
+            button1.Location = new Point(463, 31);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(112, 57);
+            button1.Size = new Size(78, 34);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // listView1
-            // 
-            listView1.Location = new Point(12, 115);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(766, 336);
-            listView1.TabIndex = 1;
-            listView1.UseCompatibleStateImageBehavior = false;
-            // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 70);
+            textBox1.Location = new Point(12, 42);
+            textBox1.Margin = new Padding(2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
+            textBox1.Size = new Size(106, 23);
             textBox1.TabIndex = 2;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(12, 70);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(529, 196);
+            richTextBox1.TabIndex = 3;
+            richTextBox1.Text = "";
             // 
             // Lab03_Bai1_server
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(790, 463);
+            ClientSize = new Size(553, 278);
+            Controls.Add(richTextBox1);
             Controls.Add(textBox1);
-            Controls.Add(listView1);
             Controls.Add(button1);
-            Margin = new Padding(4, 5, 4, 5);
             Name = "Lab03_Bai1_server";
             Text = "Lab03_Bai1_server";
+            FormClosing += Lab03_Bai1_server_FormClosing;
             Load += Lab03_Bai1_server_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -77,7 +79,7 @@
         #endregion
 
         private Button button1;
-        private ListView listView1;
         private TextBox textBox1;
+        private RichTextBox richTextBox1;
     }
 }

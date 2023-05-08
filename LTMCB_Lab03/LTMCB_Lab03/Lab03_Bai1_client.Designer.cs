@@ -38,33 +38,37 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(29, 47);
+            label1.Location = new Point(20, 28);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(133, 25);
+            label1.Size = new Size(87, 15);
             label1.TabIndex = 0;
             label1.Text = "IP Remote host";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(29, 75);
+            textBox1.Location = new Point(20, 45);
+            textBox1.Margin = new Padding(2, 2, 2, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
+            textBox1.Size = new Size(106, 23);
             textBox1.TabIndex = 1;
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(29, 162);
+            richTextBox1.Location = new Point(20, 97);
+            richTextBox1.Margin = new Padding(2, 2, 2, 2);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(565, 195);
+            richTextBox1.Size = new Size(397, 119);
             richTextBox1.TabIndex = 2;
             richTextBox1.Text = "";
             richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // button1
             // 
-            button1.Location = new Point(29, 368);
+            button1.Location = new Point(20, 221);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(78, 20);
             button1.TabIndex = 3;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -72,25 +76,26 @@
             // 
             // portTextBox
             // 
-            portTextBox.Location = new Point(441, 75);
+            portTextBox.Location = new Point(309, 45);
+            portTextBox.Margin = new Padding(2, 2, 2, 2);
             portTextBox.Name = "portTextBox";
-            portTextBox.Size = new Size(150, 31);
+            portTextBox.Size = new Size(106, 23);
             portTextBox.TabIndex = 4;
             portTextBox.TextChanged += textBox2_TextChanged;
             // 
             // Lab03_Bai1_client
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(603, 414);
+            ClientSize = new Size(422, 248);
             Controls.Add(portTextBox);
             Controls.Add(button1);
             Controls.Add(richTextBox1);
             Controls.Add(textBox1);
             Controls.Add(label1);
-            Margin = new Padding(4, 5, 4, 5);
             Name = "Lab03_Bai1_client";
             Text = "Lab03_Bai1_client";
+            FormClosing += Lab03_Bai1_client_FormClosing;
             Load += Lab03_Bai1_client_Load;
             ResumeLayout(false);
             PerformLayout();
