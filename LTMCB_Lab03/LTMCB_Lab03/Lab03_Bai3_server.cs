@@ -36,6 +36,7 @@ namespace LTMCB_Lab03
             CheckForIllegalCrossThreadCalls = false;
             listenerThread = new Thread(new ThreadStart(ListenForClients));
             listenerThread.Start();
+            button1.Enabled = false;
         }
 
         private void ListenForClients()

@@ -25,10 +25,14 @@ namespace LTMCB_Lab03
         private void button1_Click(object sender, EventArgs e)
         {
             Lab03_Bai3_server a = new Lab03_Bai3_server();
+            a.FormClosing += new FormClosingEventHandler(FormChildClosing);
             button1.Enabled = false;
             a.Show();
         }
-
+        private void FormChildClosing(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             Lab03_Bai3_client a = new Lab03_Bai3_client();

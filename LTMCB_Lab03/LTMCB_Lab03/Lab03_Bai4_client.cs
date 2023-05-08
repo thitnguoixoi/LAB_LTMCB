@@ -41,8 +41,9 @@ namespace LTMCB_Lab03
                 receiveThread = new Thread(ReceiveData);
                 receiveThread.Start();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
                 tcpClient = null;
                 iPEndPoint = null;
                 this.Close();
@@ -57,8 +58,6 @@ namespace LTMCB_Lab03
                     byte[] buffer = new byte[tcpClient.ReceiveBufferSize];
                     int bytesRead = networkStream.Read(buffer, 0, tcpClient.ReceiveBufferSize);
                     string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-                    UpdateUI = new Thread(() => UpdateUIThread(message));
-                    UpdateUI.Start();
                     if (message == "server quit")
                     {
                         tcpClient.Close();
@@ -66,6 +65,8 @@ namespace LTMCB_Lab03
                         this.Close();
                         break;
                     }
+                    UpdateUI = new Thread(() => UpdateUIThread(message));
+                    UpdateUI.Start();
                 }
             }
             catch (Exception)
@@ -102,11 +103,17 @@ namespace LTMCB_Lab03
         }
         private void Lab03_Bai4_client_FormClosing(object sender, FormClosingEventArgs e)
         {
-            string user = richTextBox2.Text.ToString();
-            user.Trim();
-            byte[] data = System.Text.Encoding.UTF8.GetBytes(user + " quitted");
-            networkStream.Write(data, 0, data.Length);
-            tcpClient.Close();
+            try
+            {
+                string user = richTextBox2.Text.ToString();
+                user.Trim();
+                byte[] data = System.Text.Encoding.UTF8.GetBytes(user + " quitted");
+                networkStream.Write(data, 0, data.Length);
+                networkStream.Close();
+                tcpClient.Close();
+            }
+            catch { }
+
         }
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)

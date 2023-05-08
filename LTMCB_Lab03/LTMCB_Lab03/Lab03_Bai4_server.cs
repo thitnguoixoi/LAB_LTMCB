@@ -19,10 +19,9 @@ namespace LTMCB_Lab03
         {
             InitializeComponent();
         }
-        private TcpListener server;
+        private TcpListener server = null;
         Thread listenerThread;
-        List<Thread> clientThreads = new List<Thread>();
-        List<Socket> clients = new List<Socket>();
+        List<Socket> clients;
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,14 +30,17 @@ namespace LTMCB_Lab03
             server.Start();
             richTextBox1.AppendText("started\n");
             CheckForIllegalCrossThreadCalls = false;
-            listenerThread = new Thread(new ThreadStart(ListenForClients));
+            listenerThread = new Thread(() => ListenForClients());
             listenerThread.Start();
+            button1.Enabled = false;
+            button2.Enabled = true;
         }
 
         private void ListenForClients()
         {
             try
             {
+                clients = new List<Socket>();
                 while (true)
                 {
                     Socket clientSocket = server.AcceptSocket();
@@ -47,30 +49,7 @@ namespace LTMCB_Lab03
                     string clientInfo = string.Format("Client {0}:{1} connected", clientEndPoint.Address, clientEndPoint.Port);
                     richTextBox1.AppendText(clientInfo + "\n");
                     CheckForIllegalCrossThreadCalls = false;
-                    Thread clientThread = new Thread(() =>
-                    {
-                        while (clientSocket.Connected)
-                        {
-                                byte[] buffer = new byte[1024];
-                                int bytesRead = clientSocket.Receive(buffer);
-                                string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-
-                                richTextBox1.AppendText(message + "\n");
-
-                                Broadcast(message);
-                                if (message.Contains("quitted"))
-                                {
-                                    // Kết nối đã bị ngắt
-                                    clientSocket.Close();
-                                    clientSocket=null;
-                                    clients.Remove(clientSocket);
-                                    richTextBox1.AppendText("Disconnected\n");
-                                    break;
-                                }
-                        }
-                    });
-                    clientThread.IsBackground = true;
-                    clientThreads.Add(clientThread);
+                    Thread clientThread = new Thread(() => ReceiveDataThread(clientSocket));
                     clientThread.Start();
                 }
             }
@@ -81,28 +60,107 @@ namespace LTMCB_Lab03
                     Broadcast("server quit");
                     server.Stop();
                 }
+
+                foreach (var item in clients.ToArray())
+                {
+                    CloseClientConnection(item);
+                }
+
+                clients.Clear();
+                richTextBox1.Clear();
+            }
+        }
+        private void ReceiveDataThread(Socket clientSocket)
+        {
+            try
+            {
+                while (clientSocket.Connected)
+                {
+                    byte[] buffer = new byte[1024];
+                    int bytesRead = clientSocket.Receive(buffer);
+                    string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+
+                    richTextBox1.AppendText(message + "\n");
+
+                    Broadcast(message);
+                    if (message.Contains("quitted"))
+                    {
+                        // Kết nối đã bị ngắt
+                        CloseClientConnection(clientSocket);
+                    }
+                }
+            }
+
+            catch
+            {
+                MessageBox.Show("Đóng kết nối!");
+                this.Close();
+            }
+        }
+        private void CloseClientConnection(Socket clientSocket)
+        {
+            clientSocket.Close();
+            foreach (var item in clients.ToArray())
+            {
+                if (item == clientSocket)
+                {
+                    clients.RemoveAt(clients.IndexOf(item));
+                }
             }
         }
         private void Broadcast(string message)
         {
-            byte[] buffer = Encoding.UTF8.GetBytes(message);
-            foreach (Socket clientSocket in clients)
+            foreach (var item in clients)
             {
-                if(clientSocket !=null) 
-                clientSocket.Send(buffer);
+                SendData(message, item);
+
             }
+        }
+        private void SendData(string message, Socket client)
+        {
+            Byte[] data = System.Text.Encoding.UTF8.GetBytes(message);
+            client.Send(data);
         }
         private void Lab03_Bai4_server_FormClosing(object sender, FormClosingEventArgs e)
         {
-            server.Stop();
-            foreach (Thread clientThread in clientThreads)
+            if (server != null)
             {
-                if (clientThread != null)
-                {
-                    clientThread.Join();
-                }
+                Broadcast("server quit");
+                server.Stop();
             }
-            listenerThread.Join();
+
+            foreach (var item in clients.ToArray())
+            {
+                CloseClientConnection(item);
+            }
+
+            clients.Clear();
+            richTextBox1.Clear();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            if (server != null)
+            {
+                Broadcast("server quit");
+                server.Stop();
+            }
+
+            foreach (var item in clients.ToArray())
+            {
+                CloseClientConnection(item);
+            }
+
+            clients.Clear();
+            richTextBox1.Clear();
+            button2.Enabled = false;
+            button1.Enabled = true;
+        }
+
+        private void Lab03_Bai4_server_Load(object sender, EventArgs e)
+        {
+            button2.Enabled = false;
         }
     }
 }

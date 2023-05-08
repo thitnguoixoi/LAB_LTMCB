@@ -34,19 +34,19 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(0, 0);
+            richTextBox1.Location = new Point(15, 32);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(295, 292);
+            richTextBox1.Size = new Size(331, 370);
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = "";
             // 
             // button1
             // 
-            button1.Location = new Point(347, 12);
+            button1.Location = new Point(273, 3);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 1;
-            button1.Text = "button1";
+            button1.Text = "Listen";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -54,7 +54,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(360, 434);
             Controls.Add(button1);
             Controls.Add(richTextBox1);
             Name = "Lab03_Bai3_server";

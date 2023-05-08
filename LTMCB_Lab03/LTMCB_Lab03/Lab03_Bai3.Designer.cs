@@ -34,21 +34,23 @@
             // 
             // button1
             // 
-            button1.Location = new Point(133, 176);
+            button1.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(125, 128);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(128, 46);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Server";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(403, 176);
+            button2.Font = new Font("Segoe UI", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Location = new Point(404, 128);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(128, 46);
             button2.TabIndex = 1;
-            button2.Text = "button2";
+            button2.Text = "Client";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -56,7 +58,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(657, 303);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Lab03_Bai3";

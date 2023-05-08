@@ -25,7 +25,7 @@ namespace LTMCB_Lab03
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Lab03_Bai4_client a= new Lab03_Bai4_client();
+            Lab03_Bai4_client a = new Lab03_Bai4_client();
             a.Show();
         }
     }

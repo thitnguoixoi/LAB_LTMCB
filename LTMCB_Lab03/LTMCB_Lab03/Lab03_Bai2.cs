@@ -16,7 +16,7 @@ namespace LTMCB_Lab03
         {
 
         }
-        private TcpListener server;
+        private TcpListener server = null;
         Thread listenerThread;
         private bool isRunning = true;
         private void button1_Click(object sender, EventArgs e)
@@ -27,12 +27,11 @@ namespace LTMCB_Lab03
             CheckForIllegalCrossThreadCalls = false;
             listenerThread = new Thread(new ThreadStart(ListenForClients));
             listenerThread.Start();
+            button1.Enabled=false;
         }
 
         private void ListenForClients()
         {
-
-     
             while (isRunning)
             {
                 Socket clientSocket = null;
@@ -62,7 +61,6 @@ namespace LTMCB_Lab03
                     }
                     clientSocket.Close();
                     richTextBox1.AppendText("disconnected\n");
-
                 }
                 catch (SocketException ex)
                 {
@@ -73,12 +71,20 @@ namespace LTMCB_Lab03
                 }
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void Lab03_Bai2_FormClosing(object sender, FormClosingEventArgs e)
         {
-            server.Stop();
-            listenerThread.Join();
-            this.Close();
+            try
+            {
+                if (server !=null)
+                {
+                    server.Stop();
+                    listenerThread.Join();
+                }
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }

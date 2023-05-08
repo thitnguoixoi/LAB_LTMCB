@@ -22,13 +22,22 @@ namespace LTMCB_Lab03
 
         private void Lab03_Bai4_client_Load(object sender, EventArgs e)
         {
-            tcpClient = new TcpClient();
-            IPEndPoint iPEndPoint = new IPEndPoint(IPAddress.Loopback, 8080);
-            tcpClient.Connect(iPEndPoint);
-            networkStream = tcpClient.GetStream();
+            try
+            {
+                tcpClient = new TcpClient();
+                IPEndPoint iPEndPoint = new IPEndPoint(IPAddress.Loopback, 8080);
+                tcpClient.Connect(iPEndPoint);
+                networkStream = tcpClient.GetStream();
+                check = true;
+            }
+            catch (Exception)
+            {
+                check = false;
+            }
         }
         NetworkStream networkStream;
         TcpClient tcpClient;
+        bool check = false;
         private void button1_Click(object sender, EventArgs e)
         {
             byte[] data = System.Text.Encoding.ASCII.GetBytes("hello\n");
@@ -38,10 +47,13 @@ namespace LTMCB_Lab03
 
         private void Lab03_Bai3_client_FormClosed(object sender, FormClosedEventArgs e)
         {
-            byte[] data = System.Text.Encoding.ASCII.GetBytes("quit\n");
-            networkStream.Write(data, 0, data.Length);
-            networkStream.Close();
-            tcpClient.Close();
+            if (check)
+            {
+                byte[] data = System.Text.Encoding.ASCII.GetBytes("quit\n");
+                networkStream.Write(data, 0, data.Length);
+                networkStream.Close();
+                tcpClient.Close();
+            }
         }
     }
 }
