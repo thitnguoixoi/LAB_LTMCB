@@ -32,55 +32,76 @@
             textBox1 = new TextBox();
             richTextBox1 = new RichTextBox();
             button2 = new Button();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(463, 31);
-            button1.Margin = new Padding(2);
+            button1.Location = new Point(661, 39);
             button1.Name = "button1";
-            button1.Size = new Size(78, 34);
+            button1.Size = new Size(111, 57);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Listen";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 42);
-            textBox1.Margin = new Padding(2);
+            textBox1.Location = new Point(106, 36);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(106, 23);
+            textBox1.Size = new Size(150, 31);
             textBox1.TabIndex = 2;
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(12, 70);
+            richTextBox1.Location = new Point(17, 117);
+            richTextBox1.Margin = new Padding(4, 5, 4, 5);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(529, 196);
+            richTextBox1.Size = new Size(754, 324);
             richTextBox1.TabIndex = 3;
             richTextBox1.Text = "";
             // 
             // button2
             // 
-            button2.Location = new Point(381, 31);
-            button2.Margin = new Padding(2);
+            button2.Location = new Point(544, 39);
             button2.Name = "button2";
-            button2.Size = new Size(78, 34);
+            button2.Size = new Size(111, 57);
             button2.TabIndex = 4;
-            button2.Text = "button2";
+            button2.Text = "Stop";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(37, 39);
+            label1.Name = "label1";
+            label1.Size = new Size(44, 25);
+            label1.TabIndex = 5;
+            label1.Text = "Port";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(17, 84);
+            label2.Name = "label2";
+            label2.Size = new Size(156, 25);
+            label2.TabIndex = 6;
+            label2.Text = "Received Message";
+            // 
             // Lab03_Bai1_server
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(553, 278);
+            ClientSize = new Size(790, 463);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(richTextBox1);
             Controls.Add(textBox1);
             Controls.Add(button1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Lab03_Bai1_server";
             Text = "Lab03_Bai1_server";
             FormClosing += Lab03_Bai1_server_FormClosing;
@@ -95,5 +116,7 @@
         private TextBox textBox1;
         private RichTextBox richTextBox1;
         private Button button2;
+        private Label label1;
+        private Label label2;
     }
 }

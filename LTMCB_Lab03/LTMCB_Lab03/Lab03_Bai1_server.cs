@@ -46,7 +46,7 @@ namespace LTMCB_Lab03
         }
         UdpClient udpClient;
         Thread thdUDPServer;
-        bool isAlive ;
+        bool isAlive;
         public void serverThread()
         {
             int port = int.Parse(textBox1.Text);
