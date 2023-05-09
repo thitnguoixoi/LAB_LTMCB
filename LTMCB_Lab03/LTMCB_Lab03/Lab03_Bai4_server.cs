@@ -85,7 +85,6 @@ namespace LTMCB_Lab03
                     Broadcast(message);
                     if (message.Contains("quitted"))
                     {
-                        // Kết nối đã bị ngắt
                         CloseClientConnection(clientSocket);
                     }
                 }

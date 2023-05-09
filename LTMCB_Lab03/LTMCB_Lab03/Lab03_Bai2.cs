@@ -25,16 +25,16 @@ namespace LTMCB_Lab03
             server.Start();
             richTextBox1.AppendText("started\n");
             CheckForIllegalCrossThreadCalls = false;
-            listenerThread = new Thread(new ThreadStart(ListenForClients));
+            listenerThread = new Thread(()=>ListenForClients());
             listenerThread.Start();
-            button1.Enabled=false;
+            button1.Enabled = false;
         }
 
         private void ListenForClients()
         {
             while (isRunning)
             {
-                Socket clientSocket = null;
+                Socket clientSocket;
                 try
                 {
                     int bytesRecv = 0;
@@ -55,7 +55,6 @@ namespace LTMCB_Lab03
                         richTextBox1.AppendText(text);
                         if (clientSocket.Receive(buffer) == 0)
                         {
-                            // Kết nối đã bị ngắt
                             isConnected = false;
                         }
                     }
@@ -75,8 +74,9 @@ namespace LTMCB_Lab03
         {
             try
             {
-                if (server !=null)
+                if (server != null)
                 {
+                    isRunning = false;
                     server.Stop();
                     listenerThread.Join();
                 }
