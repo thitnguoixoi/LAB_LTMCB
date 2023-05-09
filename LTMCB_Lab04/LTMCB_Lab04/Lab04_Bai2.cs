@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LTMCB_Lab04
 {
-    public partial class Form1 : Form
+    public partial class Lab04_Bai2 : Form
     {
-        public Form1()
+        public Lab04_Bai2()
         {
             InitializeComponent();
         }
