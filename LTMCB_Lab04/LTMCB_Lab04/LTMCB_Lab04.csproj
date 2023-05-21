@@ -81,8 +81,14 @@
     <EmbeddedResource Include="Lab04.resx">
       <DependentUpon>Lab04.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lab04_Bai1.resx">
+      <DependentUpon>Lab04_Bai1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lab04_Bai2.resx">
       <DependentUpon>Lab04_Bai2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab04_Bai3.resx">
+      <DependentUpon>Lab04_Bai3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -9,3 +9,17 @@ D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.csproj.CoreCompileInputs.cache
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.exe
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.pdb
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\bin\Debug\LTMCB_Lab04.exe.config
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\bin\Debug\LTMCB_Lab04.exe
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\bin\Debug\LTMCB_Lab04.pdb
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.csproj.AssemblyReference.cache
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.csproj.SuggestedBindingRedirects.cache
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.Lab04.resources
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.Lab04_Bai1.resources
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.Lab04_Bai2.resources
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.Properties.Resources.resources
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.csproj.GenerateResource.cache
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.csproj.CoreCompileInputs.cache
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.exe
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.pdb
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.Lab04_Bai3.resources
