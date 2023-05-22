@@ -33,7 +33,7 @@ namespace LTMCB_Lab04
             }
             catch
             {
-                MessageBox.Show("biết nhập URL không?");
+                MessageBox.Show("Biết nhập URL không?");
             }
         }
         private string getHTML(string szURL)
@@ -51,6 +51,11 @@ namespace LTMCB_Lab04
             // Close the response. 
             response.Close();
             return responseFromServer;
+        }
+
+        private void Lab04_Bai1_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
