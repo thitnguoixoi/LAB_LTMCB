@@ -32,3 +32,9 @@ D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\bin\Debug\HtmlAgilityPack.xml
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.csproj.CopyComplete
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.Lab04_Bai4_Source.resources
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\bin\Debug\HtmlAgilityPack.dll
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\bin\Debug\HtmlAgilityPack.pdb
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\bin\Debug\HtmlAgilityPack.xml
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.Lab04_Bai4.resources
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.Lab04_Bai4_Source.resources
+D:\labmcb\thitnguoixoi\LAB_LTMCB\LTMCB_Lab04\LTMCB_Lab04\obj\Debug\LTMCB_Lab04.csproj.CopyComplete

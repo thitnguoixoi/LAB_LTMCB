@@ -59,7 +59,9 @@ namespace LTMCB_Lab04
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string path = "D:\\OneDrive - Trường ĐH CNTT - University of Information Technology\\Nam2\\Ky2\\LTMCB\\LAB\\Lab04_Path";
+            try
+            {
+            string path = "D:\\labmcb\\thitnguoixoi";
             string url = textBox1.Text;
             HttpClient httpClient = new HttpClient();
             HtmlWeb web = new HtmlWeb();
@@ -99,6 +101,8 @@ namespace LTMCB_Lab04
                 }
                 File.WriteAllText(Path.Combine(path, "index.html"), document.DocumentNode.OuterHtml);
             }
+            }
+            catch (Exception) { }
         }
 
         private void button3_Click_1(object sender, EventArgs e)
