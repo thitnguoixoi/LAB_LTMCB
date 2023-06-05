@@ -96,6 +96,24 @@
     <Compile Include="Lab05_Bai3.Designer.cs">
       <DependentUpon>Lab05_Bai3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab05_Bai3_BrowseEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab05_Bai3_BrowseEmail.Designer.cs">
+      <DependentUpon>Lab05_Bai3_BrowseEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab05_Bai3_LoggedIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab05_Bai3_LoggedIn.Designer.cs">
+      <DependentUpon>Lab05_Bai3_LoggedIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab05_Bai3_SendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab05_Bai3_SendEmail.Designer.cs">
+      <DependentUpon>Lab05_Bai3_SendEmail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Lab05.resx">
@@ -106,6 +124,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lab05_Bai2.resx">
       <DependentUpon>Lab05_Bai2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab05_Bai3.resx">
+      <DependentUpon>Lab05_Bai3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab05_Bai3_BrowseEmail.resx">
+      <DependentUpon>Lab05_Bai3_BrowseEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab05_Bai3_LoggedIn.resx">
+      <DependentUpon>Lab05_Bai3_LoggedIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab05_Bai3_SendEmail.resx">
+      <DependentUpon>Lab05_Bai3_SendEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -32,3 +32,7 @@ D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab05\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab05\WindowsFormsApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab05\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab05\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Lab05_Bai3.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab05\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Lab05_Bai3_LoggedIn.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab05\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Lab05_Bai3_SendEmail.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab05\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Lab05_Bai3_BrowseEmail.resources
