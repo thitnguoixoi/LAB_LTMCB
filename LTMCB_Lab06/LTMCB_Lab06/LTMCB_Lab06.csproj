@@ -46,14 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Lab06_Ingame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Lab06_Ingame.Designer.cs">
+      <DependentUpon>Lab06_Ingame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab06_MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab06_MainForm.Designer.cs">
+      <DependentUpon>Lab06_MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Lab06_Ingame.resx">
+      <DependentUpon>Lab06_Ingame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab06_MainForm.resx">
+      <DependentUpon>Lab06_MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
