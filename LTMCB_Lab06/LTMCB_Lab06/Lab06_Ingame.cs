@@ -210,7 +210,7 @@ namespace LTMCB_Lab06
                     else hostOrJoin = $">>> {time} - {this.Text} kết nối tới Server... <<<";
                     rtb_Chat.Text = $"{hostOrJoin}\n\n{rtb_Chat.Text}\n>>> Kết nối đã bị đóng <<<\n\n\n\n";
                     foreach (String line in rtb_Chat.Lines)
-                        sw.WriteLine(line);D
+                        sw.WriteLine(line);
                     sw.Close();
                 }
                 catch
