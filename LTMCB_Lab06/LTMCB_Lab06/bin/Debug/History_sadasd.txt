@@ -1,0 +1,45 @@
+>>> 6:59:02 PM - sadasd kết nối tới Server... <<<
+
+sadasd: chung m tuoi loz
+>>> c1nd3r đã sẵn sàng!
+>>> sadasd đã sẵn sàng!
+Có 2 người chơi.
+Game sẽ có 5 vòng!
+>>> Vòng 1: Nhập số trong khoảng [30, 40].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 40.
+------------------------------
+>>> Vòng 2: Nhập số trong khoảng [80, 90].
+c1nd3r đưa ra đáp án sai! (88). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 82.
+------------------------------
+>>> Vòng 3: Nhập số trong khoảng [100, 130].
+sadasd đưa ra đáp án sai! (87). -1p
+c1nd3r đưa ra đáp án sai! (119). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 118.
+------------------------------
+>>> Vòng 4: Nhập số trong khoảng [30, 40].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 39.
+------------------------------
+>>> Vòng 5: Nhập số trong khoảng [20, 30].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 29.
+------------------------------
+Điểm cao nhất: -1
+Người chơi đạt điểm cao nhất:
+  + sadasd
+Điểm của bạn: -1
+==============================
+
+Đang tạo phòng mới...
+Chờ người chơi...
+>>> c1nd3r đã rời khỏi phòng.
+
+>>> Kết nối đã bị đóng <<<
+
+
+
+

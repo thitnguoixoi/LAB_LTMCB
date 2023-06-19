@@ -39,6 +39,10 @@ namespace LTMCB_Lab06
             this.time = time;
             rand = new Random();
         }
+        public string getRtbText()  
+        {
+            return rtb_Chat.Text;
+        }
 
         // Event handler
         private void Lab06_Ingame_Load(object sender, EventArgs e)
@@ -99,7 +103,7 @@ namespace LTMCB_Lab06
 
             if (!isServer)
             {
-                MessageBox.Show($"Xin chào, {ress[0]} .", "Thành công");
+                MessageBox.Show($"Xin chào, {ress[0]}!", "Thành công");
                 time = DateTime.Now.ToString("h:mm:ss tt");
             }
 
@@ -230,6 +234,11 @@ namespace LTMCB_Lab06
             parent.Show();
         }
 
+        private void lb_NumOfPlayers_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void lb_Time_Click(object sender, EventArgs e)
         {
 
@@ -306,7 +315,7 @@ namespace LTMCB_Lab06
                     else if (data[0] == '\t')
                         this.Invoke(new MethodInvoker(delegate ()
                         {
-                            lb_NumOfPlayers.Text = $"{data.Substring(1)} người chơi tham gia trò chơi này.";
+                            lb_NumOfPlayers.Text = $"{data.Substring(1)}";
                         }));
 
                     else if (data.StartsWith("@@@Nextround!@@@"))

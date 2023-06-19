@@ -15,7 +15,7 @@ namespace LTMCB_Lab06
     public partial class Lab06_Browser : Form
     {
         private String text;
-        public Lab06_Browser()
+        public Lab06_Browser(String text)
         {
             InitializeComponent();
             webBrowser1.ScriptErrorsSuppressed = true;

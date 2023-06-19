@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace LTMCB_Lab06
 {
@@ -40,7 +41,7 @@ namespace LTMCB_Lab06
         }
 
         // Event handler
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        private void Lab06_MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (ingame)
             {
@@ -51,9 +52,11 @@ namespace LTMCB_Lab06
 
             if (serverForm != null)
             {
+                string content = serverForm.getRtbText();
                 this.Hide();
 
-           //     String text = $">>> {time} - Server hosted a connection... <<<\n\n{serverForm.rtb_Chat.Text}\n>>> Connection closed <<<\n\n\n\n";
+                String text = $">>> {time} - Server hosted a connection... <<<\n\n{content}\n>>> Connection closed <<<\n\n\n\n";
+                (new Lab06_Browser(text)).ShowDialog();
                 serverForm.isServer = serverForm.isIngame = false;
                 serverForm.Close();
             }
@@ -61,6 +64,7 @@ namespace LTMCB_Lab06
             if (serverSocket != null) serverSocket.Stop();
             if (thread != null) thread.Abort();
         }
+       
         private void Lab06_MainForm_Load(object sender, EventArgs e)
         {
 
@@ -101,7 +105,8 @@ namespace LTMCB_Lab06
         {
 
         }
-        
+
+
         // Server thread
         private void serverThread()
         {

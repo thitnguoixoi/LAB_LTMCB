@@ -1,0 +1,185 @@
+>>> 7:05:14 PM - Server khởi tạo kết nối... <<<
+
+>>> 12312 đã tham gia.
+>>> c1nd3r đã tham gia.
+>>> c1nd3r đã sẵn sàng!
+>>> 12312 đã sẵn sàng!
+Có 2 người chơi.
+Game sẽ có 5 vòng!
+>>> Vòng 1: Nhập số trong khoảng [30, 80].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 78.
+------------------------------
+>>> Vòng 2: Nhập số trong khoảng [10, 50].
+c1nd3r đưa ra đáp án sai! (43). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 17.
+------------------------------
+>>> Vòng 3: Nhập số trong khoảng [40, 50].
+c1nd3r đưa ra đáp án sai! (43). -1p
+Người chiến thắng round 3 là...
+Chúc mừng 12312 là người đưa ra câu trả lời đúng và nhanh nhất! +10p
+Số chính xác là 44.
+------------------------------
+>>> Vòng 4: Nhập số trong khoảng [20, 50].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 33.
+------------------------------
+>>> Vòng 5: Nhập số trong khoảng [90, 120].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 104.
+------------------------------
+Điểm cao nhất: 10
+Người chơi đạt điểm cao nhất:
+  + 12312
+==============================
+
+Đang tạo phòng mới...
+Chờ người chơi...
+Server: chung m ngu vcl
+>>> 12312 đã rời khỏi phòng.
+>>> c1nd3r đã rời khỏi phòng.
+>>> Tất cả người chơi đã rời trò chơi!
+
+>>> Kết nối đã bị đóng <<<
+
+
+
+
+>>> 7:11:46 PM - Server khởi tạo kết nối... <<<
+
+>>> dasdasd đã tham gia.
+>>> dasdasd đã sẵn sàng!
+Có 1 người chơi.
+Game sẽ có 5 vòng!
+>>> Vòng 1: Nhập số trong khoảng [20, 50].
+dasdasd đưa ra đáp án sai! (34). -1p
+dasdasd: vc
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 35.
+------------------------------
+>>> Vòng 2: Nhập số trong khoảng [50, 70].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 65.
+------------------------------
+>>> Vòng 3: Nhập số trong khoảng [100, 130].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 113.
+------------------------------
+>>> Vòng 4: Nhập số trong khoảng [70, 90].
+dasdasd đưa ra đáp án sai! (55). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 80.
+------------------------------
+>>> Vòng 5: Nhập số trong khoảng [60, 70].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 64.
+------------------------------
+Điểm cao nhất: -2
+Người chơi đạt điểm cao nhất:
+  + dasdasd
+==============================
+
+Đang tạo phòng mới...
+Chờ người chơi...
+>>> dasdasd đã rời khỏi phòng.
+>>> Tất cả người chơi đã rời trò chơi!
+
+>>> Kết nối đã bị đóng <<<
+
+
+
+
+>>> 7:41:03 PM - Server khởi tạo kết nối... <<<
+
+>>> player 1 đã tham gia.
+>>> player 1 đã sẵn sàng!
+Có 1 người chơi.
+Game sẽ có 5 vòng!
+>>> Vòng 1: Nhập số trong khoảng [50, 80].
+player 1 đưa ra đáp án sai! (55). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 51.
+------------------------------
+>>> Vòng 2: Nhập số trong khoảng [20, 60].
+player 1 đưa ra đáp án sai! (55). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 39.
+------------------------------
+>>> Vòng 3: Nhập số trong khoảng [20, 70].
+player 1 đưa ra đáp án sai! (55). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 46.
+------------------------------
+>>> Vòng 4: Nhập số trong khoảng [30, 40].
+player 1: vcl
+player 1 đưa ra đáp án sai! (35). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 31.
+------------------------------
+>>> Vòng 5: Nhập số trong khoảng [10, 60].
+player 1 đưa ra đáp án sai! (55). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 49.
+------------------------------
+Điểm cao nhất: -5
+Người chơi đạt điểm cao nhất:
+  + player 1
+==============================
+
+Đang tạo phòng mới...
+Chờ người chơi...
+>>> player 1 đã rời khỏi phòng.
+>>> Tất cả người chơi đã rời trò chơi!
+
+>>> Kết nối đã bị đóng <<<
+
+
+
+
+>>> 7:43:09 PM - Server khởi tạo kết nối... <<<
+
+>>> 1312 đã tham gia.
+>>> 1312 đã sẵn sàng!
+Có 1 người chơi.
+Game sẽ có 5 vòng!
+>>> Vòng 1: Nhập số trong khoảng [30, 70].
+1312 đưa ra đáp án sai! (34). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 44.
+------------------------------
+>>> Vòng 2: Nhập số trong khoảng [40, 50].
+1312 đưa ra đáp án sai! (41). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 46.
+------------------------------
+>>> Vòng 3: Nhập số trong khoảng [20, 70].
+1312 đưa ra đáp án sai! (41). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 52.
+------------------------------
+>>> Vòng 4: Nhập số trong khoảng [70, 90].
+1312 đưa ra đáp án sai! (77). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 90.
+------------------------------
+>>> Vòng 5: Nhập số trong khoảng [30, 60].
+1312 đưa ra đáp án sai! (55). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 36.
+------------------------------
+Điểm cao nhất: -5
+Người chơi đạt điểm cao nhất:
+  + 1312
+==============================
+
+Đang tạo phòng mới...
+Chờ người chơi...
+>>> 1312 đã rời khỏi phòng.
+>>> Tất cả người chơi đã rời trò chơi!
+
+>>> Kết nối đã bị đóng <<<
+
+
+
+

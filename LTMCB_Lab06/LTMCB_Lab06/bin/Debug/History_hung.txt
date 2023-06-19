@@ -1,0 +1,83 @@
+>>> 6:49:55 PM - hung kết nối tới Server... <<<
+
+>>> hung đã sẵn sàng!
+Có 1 người chơi.
+Game sẽ có 5 vòng!
+>>> Vòng 1: Nhập số trong khoảng [0, 10].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 1.
+------------------------------
+>>> Vòng 2: Nhập số trong khoảng [40, 70].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 53.
+------------------------------
+>>> Vòng 3: Nhập số trong khoảng [60, 90].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 70.
+------------------------------
+>>> Vòng 4: Nhập số trong khoảng [60, 100].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 69.
+------------------------------
+>>> Vòng 5: Nhập số trong khoảng [60, 90].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 75.
+------------------------------
+Điểm cao nhất: 0
+Người chơi đạt điểm cao nhất:
+  + hung
+Điểm của bạn: 0
+==============================
+
+Đang tạo phòng mới...
+Chờ người chơi...
+
+>>> Kết nối đã bị đóng <<<
+
+
+
+
+>>> 6:52:42 PM - hung kết nối tới Server... <<<
+
+>>> c1nd3r đã tham gia.
+>>> c1nd3r đã sẵn sàng!
+>>> hungasfa đã sẵn sàng!
+>>> hung đã sẵn sàng!
+Có 3 người chơi.
+Game sẽ có 5 vòng!
+>>> Vòng 1: Nhập số trong khoảng [70, 100].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 72.
+------------------------------
+>>> Vòng 2: Nhập số trong khoảng [30, 40].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 38.
+------------------------------
+>>> Vòng 3: Nhập số trong khoảng [40, 70].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 42.
+------------------------------
+>>> Vòng 4: Nhập số trong khoảng [50, 90].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 53.
+------------------------------
+>>> Vòng 5: Nhập số trong khoảng [20, 40].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 21.
+------------------------------
+Điểm cao nhất: 0
+Người chơi đạt điểm cao nhất:
+  + hungasfa
+  + hung
+  + c1nd3r
+Điểm của bạn: 0
+==============================
+
+Đang tạo phòng mới...
+Chờ người chơi...
+
+>>> Kết nối đã bị đóng <<<
+
+
+
+

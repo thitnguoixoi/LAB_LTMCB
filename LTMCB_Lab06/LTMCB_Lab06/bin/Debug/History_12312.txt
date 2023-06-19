@@ -1,0 +1,45 @@
+>>> 7:05:24 PM - 12312 kết nối tới Server... <<<
+
+>>> c1nd3r đã tham gia.
+>>> c1nd3r đã sẵn sàng!
+>>> 12312 đã sẵn sàng!
+Có 2 người chơi.
+Game sẽ có 5 vòng!
+>>> Vòng 1: Nhập số trong khoảng [30, 80].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 78.
+------------------------------
+>>> Vòng 2: Nhập số trong khoảng [10, 50].
+c1nd3r đưa ra đáp án sai! (43). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 17.
+------------------------------
+>>> Vòng 3: Nhập số trong khoảng [40, 50].
+c1nd3r đưa ra đáp án sai! (43). -1p
+Người chiến thắng round 3 là...
+Chúc mừng 12312 là người đưa ra câu trả lời đúng và nhanh nhất! +10p
+Số chính xác là 44.
+------------------------------
+>>> Vòng 4: Nhập số trong khoảng [20, 50].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 33.
+------------------------------
+>>> Vòng 5: Nhập số trong khoảng [90, 120].
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 104.
+------------------------------
+Điểm cao nhất: 10
+Người chơi đạt điểm cao nhất:
+  + 12312
+Điểm của bạn: 10
+==============================
+
+Đang tạo phòng mới...
+Chờ người chơi...
+Server: chung m ngu vcl
+
+>>> Kết nối đã bị đóng <<<
+
+
+
+

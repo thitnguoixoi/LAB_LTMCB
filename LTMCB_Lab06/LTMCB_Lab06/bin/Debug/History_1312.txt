@@ -1,0 +1,44 @@
+>>> 7:43:15 PM - 1312 kết nối tới Server... <<<
+
+>>> 1312 đã sẵn sàng!
+Có 1 người chơi.
+Game sẽ có 5 vòng!
+>>> Vòng 1: Nhập số trong khoảng [30, 70].
+1312 đưa ra đáp án sai! (34). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 44.
+------------------------------
+>>> Vòng 2: Nhập số trong khoảng [40, 50].
+1312 đưa ra đáp án sai! (41). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 46.
+------------------------------
+>>> Vòng 3: Nhập số trong khoảng [20, 70].
+1312 đưa ra đáp án sai! (41). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 52.
+------------------------------
+>>> Vòng 4: Nhập số trong khoảng [70, 90].
+1312 đưa ra đáp án sai! (77). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 90.
+------------------------------
+>>> Vòng 5: Nhập số trong khoảng [30, 60].
+1312 đưa ra đáp án sai! (55). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 36.
+------------------------------
+Điểm cao nhất: -5
+Người chơi đạt điểm cao nhất:
+  + 1312
+Điểm của bạn: -5
+==============================
+
+Đang tạo phòng mới...
+Chờ người chơi...
+
+>>> Kết nối đã bị đóng <<<
+
+
+
+

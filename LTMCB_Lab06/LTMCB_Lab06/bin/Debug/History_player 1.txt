@@ -1,0 +1,45 @@
+>>> 7:41:10 PM - player 1 kết nối tới Server... <<<
+
+>>> player 1 đã sẵn sàng!
+Có 1 người chơi.
+Game sẽ có 5 vòng!
+>>> Vòng 1: Nhập số trong khoảng [50, 80].
+player 1 đưa ra đáp án sai! (55). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 51.
+------------------------------
+>>> Vòng 2: Nhập số trong khoảng [20, 60].
+player 1 đưa ra đáp án sai! (55). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 39.
+------------------------------
+>>> Vòng 3: Nhập số trong khoảng [20, 70].
+player 1 đưa ra đáp án sai! (55). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 46.
+------------------------------
+>>> Vòng 4: Nhập số trong khoảng [30, 40].
+player 1: vcl
+player 1 đưa ra đáp án sai! (35). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 31.
+------------------------------
+>>> Vòng 5: Nhập số trong khoảng [10, 60].
+player 1 đưa ra đáp án sai! (55). -1p
+Không ai đoán đúng. Mấy bro biết chơi game không?
+Số chính xác là 49.
+------------------------------
+Điểm cao nhất: -5
+Người chơi đạt điểm cao nhất:
+  + player 1
+Điểm của bạn: -5
+==============================
+
+Đang tạo phòng mới...
+Chờ người chơi...
+
+>>> Kết nối đã bị đóng <<<
+
+
+
+

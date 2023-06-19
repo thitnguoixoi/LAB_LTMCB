@@ -49,6 +49,7 @@
             this.Controls.Add(this.webBrowser1);
             this.Name = "Lab06_Browser";
             this.Text = "Lab06_Browser";
+            this.Load += new System.EventHandler(this.Browser_Load);
             this.ResumeLayout(false);
 
         }
