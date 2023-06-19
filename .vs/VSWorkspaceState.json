@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\LTMCB_Lab06",
+    "\\LTMCB_Lab06\\LTMCB_Lab06"
   ],
-  "SelectedNode": "\\LTMCB_Lab06.sln",
+  "SelectedNode": "\\LTMCB_Lab06\\LTMCB_Lab06\\LTMCB_Lab06.csproj",
   "PreviewInSolutionExplorer": false
 }

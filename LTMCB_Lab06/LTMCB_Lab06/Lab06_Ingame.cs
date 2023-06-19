@@ -17,6 +17,7 @@ namespace LTMCB_Lab06
 {
     public partial class Lab06_Ingame : Form
     {
+        // Variables
         private Lab06_MainForm parent;
         private TcpClient client = null;
         private Thread thread = null;
@@ -26,6 +27,8 @@ namespace LTMCB_Lab06
         private int timeLeft = -1, startRange, endRange, valRange, lastSubmitTime;
         private List<int> trueVal = null;
         private Random rand;
+
+        // Initialize
         public Lab06_Ingame(Lab06_MainForm parent, string joinUsername, string joinPort, String time)
         {
             InitializeComponent();
@@ -37,12 +40,8 @@ namespace LTMCB_Lab06
             rand = new Random();
         }
 
+        // Event handler
         private void Lab06_Ingame_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ClientForm_Load(object sender, EventArgs e)
         {
             string username = joinUsername;
             IPAddress ip = null;
@@ -55,7 +54,7 @@ namespace LTMCB_Lab06
             }
             catch
             {
-                MessageBox.Show("IPEndpoint không chính xác.", "Lỗi");
+                MessageBox.Show("IPEndpoint có lỗi.", "Lỗi");
                 this.Close();
                 return;
             }
@@ -71,7 +70,6 @@ namespace LTMCB_Lab06
                 return;
             }
 
-            //  assign username
             NetworkStream stream = client.GetStream();
             byte[] buffer = Encoding.UTF8.GetBytes(username);
             stream.Write(buffer, 0, buffer.Length);
@@ -111,7 +109,74 @@ namespace LTMCB_Lab06
             thread = new Thread(o => ReceiveData((TcpClient)o));
             thread.Start(client);
         }
-        private void ClientForm_FormClosing(object sender, FormClosingEventArgs e)
+
+        private void send(String message)
+        {
+            NetworkStream stream = client.GetStream();
+            byte[] buffer = Encoding.UTF8.GetBytes($"{message}\n");
+            stream.Write(buffer, 0, buffer.Length);
+        }
+
+        private void btn_Ready_Click(object sender, EventArgs e)
+        {
+            btn_Ready.Enabled = false;
+            send("@@@Ready!@@@");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            send($"m{tb_Message.Text}");
+            tb_Message.Clear();
+        }
+
+        private void btn_Clear_Click(object sender, EventArgs e)
+        {
+            rtb_Chat.Clear();
+        }
+
+        private void lb_Result_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer_Tick_1(object sender, EventArgs e)
+        {
+            timeLeft--;
+            if (timeLeft > -1)
+            {
+                lb_Time.Text = timeLeft.ToString();
+                if (timeLeft == 0)
+                {
+                    btn_Submit.Enabled = tb_Answer.Enabled = label3.Enabled = label4.Enabled = label6.Enabled = lb_Range.Enabled = lb_Result.Enabled = false;
+                    send("@@@Timeup!@@@");
+                }
+                else if (isAuto && lastSubmitTime - timeLeft >= 3)
+                    (new Thread(() => autoSubmit())).Start();
+                else if (!isAuto && lastSubmitTime - timeLeft >= 3)
+                {
+                    btn_Submit.Enabled = tb_Answer.Enabled = true;
+                    tb_Answer.Focus();
+                    tb_Answer.Select();
+                }
+            }
+            else
+            {
+                lb_Time.Text = "0";
+                timer.Stop();
+            }
+        }
+
+        private void Lab06_Ingame_FormClosing_1(object sender, FormClosingEventArgs e)
         {
             if (isServer)
             {
@@ -147,7 +212,7 @@ namespace LTMCB_Lab06
                 }
                 catch
                 {
-                    MessageBox.Show("Không thể viết file log.", "Lỗi");
+                    MessageBox.Show("Không thể viết file lịch sử trò chơi.", "Lỗi");
                 }
 
             if (thread != null) thread.Abort();
@@ -163,66 +228,6 @@ namespace LTMCB_Lab06
             }
 
             parent.Show();
-        }
-        private void send(String message)
-        {
-            NetworkStream stream = client.GetStream();
-            byte[] buffer = Encoding.UTF8.GetBytes($"{message}\n");
-            stream.Write(buffer, 0, buffer.Length);
-        }
-
-        private void btn_Ready_Click(object sender, EventArgs e)
-        {
-            btn_Ready.Enabled = false;
-            send("@@@Ready!@@@");
-        }
-
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            timeLeft--;
-            if (timeLeft > -1)
-            {
-                lb_Time.Text = timeLeft.ToString();
-                if (timeLeft == 0)
-                {
-                    btn_Submit.Enabled = tb_Answer.Enabled = label3.Enabled = label4.Enabled = label6.Enabled = lb_Range.Enabled = lb_Result.Enabled = false;
-                    send("@@@Timeup!@@@");
-                }
-                else if (isAuto && lastSubmitTime - timeLeft >= 3)
-                    (new Thread(() => autoSubmit())).Start();
-                else if (!isAuto && lastSubmitTime - timeLeft >= 3)
-                {
-                    btn_Submit.Enabled = tb_Answer.Enabled = true;
-                    tb_Answer.Focus();
-                    tb_Answer.Select();
-                }
-            }
-            else
-            {
-                lb_Time.Text = "0";
-                timer.Stop();
-            }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_Exit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            send($"m{tb_Message.Text}");
-            tb_Message.Clear();
-        }
-
-        private void btn_Clear_Click(object sender, EventArgs e)
-        {
-            rtb_Chat.Clear();
         }
 
         private void lb_Time_Click(object sender, EventArgs e)

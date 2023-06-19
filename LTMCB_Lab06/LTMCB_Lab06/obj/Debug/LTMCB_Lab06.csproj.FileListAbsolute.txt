@@ -10,3 +10,5 @@ D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab06\LTMCB_Lab06\obj\Debug\LTMCB_Lab06.Lab06_Ingame.resources
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab06\LTMCB_Lab06\obj\Debug\LTMCB_Lab06.exe
 D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab06\LTMCB_Lab06\obj\Debug\LTMCB_Lab06.pdb
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab06\LTMCB_Lab06\obj\Debug\LTMCB_Lab06.Lab06_Browser.resources
+D:\OneDrive - Trường ĐH CNTT - University of Information Technology\Nam2\Ky2\LTMCB\LAB\LAB_LTMCB\LTMCB_Lab06\LTMCB_Lab06\obj\Debug\LTMCB_Lab06.Lab06_MsgBox.resources

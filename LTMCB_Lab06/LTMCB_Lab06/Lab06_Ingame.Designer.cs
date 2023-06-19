@@ -209,6 +209,7 @@
             this.lb_Result.Size = new System.Drawing.Size(26, 29);
             this.lb_Result.TabIndex = 16;
             this.lb_Result.Text = "0";
+            this.lb_Result.Click += new System.EventHandler(this.lb_Result_Click);
             // 
             // label6
             // 
@@ -219,6 +220,10 @@
             this.label6.Size = new System.Drawing.Size(95, 29);
             this.label6.TabIndex = 15;
             this.label6.Text = "Đáp án:";
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick_1);
             // 
             // Lab06_Ingame
             // 
@@ -244,6 +249,7 @@
             this.Controls.Add(this.rtb_Chat);
             this.Name = "Lab06_Ingame";
             this.Text = "Lab06_Ingame";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Lab06_Ingame_FormClosing_1);
             this.Load += new System.EventHandler(this.Lab06_Ingame_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

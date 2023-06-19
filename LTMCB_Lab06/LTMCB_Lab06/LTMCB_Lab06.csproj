@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lab06_Browser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab06_Browser.Designer.cs">
+      <DependentUpon>Lab06_Browser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lab06_Ingame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,13 +64,25 @@
     <Compile Include="Lab06_MainForm.Designer.cs">
       <DependentUpon>Lab06_MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab06_MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab06_MsgBox.Designer.cs">
+      <DependentUpon>Lab06_MsgBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Lab06_Browser.resx">
+      <DependentUpon>Lab06_Browser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lab06_Ingame.resx">
       <DependentUpon>Lab06_Ingame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lab06_MainForm.resx">
       <DependentUpon>Lab06_MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab06_MsgBox.resx">
+      <DependentUpon>Lab06_MsgBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

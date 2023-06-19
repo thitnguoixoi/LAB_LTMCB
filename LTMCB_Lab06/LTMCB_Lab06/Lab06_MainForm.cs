@@ -15,10 +15,13 @@ namespace LTMCB_Lab06
 {
     public partial class Lab06_MainForm : Form
     {
+        // Variables 
+        //// MainForm
         private Thread thread = null;
         private TcpListener serverSocket;
         private Lab06_Ingame serverForm = null;
-        ////  server
+
+        ////  Server
         private readonly object _lock = new object();
         private readonly Dictionary<String, TcpClient> clientsList = new Dictionary<string, TcpClient>();
         private Dictionary<String, int> scoreBoard = new Dictionary<string, int>();
@@ -27,12 +30,16 @@ namespace LTMCB_Lab06
         private bool ingame = false;
         private String correctPlayer, time = "";
         private Random rand;
+
+        // Initialize
         public Lab06_MainForm()
         {
             InitializeComponent();
             this.MaximizeBox = false;
             rand = new Random();
         }
+
+        // Event handler
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (ingame)
@@ -59,6 +66,8 @@ namespace LTMCB_Lab06
 
         }
 
+        // Button handler
+
         private void btn_Client_Click_1(object sender, EventArgs e)
         {
             this.Hide();
@@ -72,6 +81,10 @@ namespace LTMCB_Lab06
             if (thread == null) serverForm = null;
         }
 
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private void btn_Server_Click(object sender, EventArgs e)
         {
             btn_Server.Enabled = false;
@@ -88,11 +101,8 @@ namespace LTMCB_Lab06
         {
 
         }
-
-        private void btn_Exit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
+        // Server thread
         private void serverThread()
         {
             int port;
@@ -125,7 +135,7 @@ namespace LTMCB_Lab06
                 btn_Client.PerformClick();
             })))).Start();
 
-            MessageBox.Show($"Tạo phòng thành công tại port: {port}.", "Thành công");
+            MessageBox.Show($"Tạo phòng thành công tại port {port}.", "Thành công");
 
             while (Thread.CurrentThread.IsAlive)
             {
@@ -150,7 +160,7 @@ namespace LTMCB_Lab06
                     stream.Write(buffer, 0, buffer.Length);
                     continue;
                 }
-                if (username == " ") username = $"Người chơi {clientsCount}";
+                if (username == " ") username = $"player {clientsCount}";
                 if (clientsList.ContainsKey(username))
                 {
                     buffer = Encoding.UTF8.GetBytes(" ");
@@ -330,7 +340,7 @@ namespace LTMCB_Lab06
             startRange = rand.Next(0, 11) * 10;
             endRange = startRange + rand.Next(1, 6) * 10;
             luckyNumber = rand.Next(startRange, endRange + 1);
-            broadcast($"m>>> Vòng {currentRound}: Nhập số trong khoảng [{startRange}, {endRange}].\n@@@Tiếp tục!@@@{rand.Next(5, 11)}\t{startRange}\t{endRange}\t{luckyNumber}");
+            broadcast($"m>>> Vòng {currentRound}: Nhập số trong khoảng [{startRange}, {endRange}].\n@@@Nextround!@@@{rand.Next(5, 11)}\t{startRange}\t{endRange}\t{luckyNumber}");
             currentRound++;
             correctPlayer = "";
         }
