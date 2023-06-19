@@ -130,7 +130,7 @@
             this.Controls.Add(this.btn_Server);
             this.Controls.Add(this.btn_Client);
             this.Name = "Lab06_MainForm";
-            this.Text = "Form1";
+            this.Text = "Game đoán số";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Lab06_MainForm_FormClosing);
             this.Load += new System.EventHandler(this.Lab06_MainForm_Load);
             this.ResumeLayout(false);

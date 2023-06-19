@@ -165,7 +165,7 @@ namespace LTMCB_Lab06
                     stream.Write(buffer, 0, buffer.Length);
                     continue;
                 }
-                if (username == " ") username = $"player {clientsCount}";
+                if (username == " ") username = $"player {clientsCount}";  // assign username
                 if (clientsList.ContainsKey(username))
                 {
                     buffer = Encoding.UTF8.GetBytes(" ");
@@ -288,6 +288,23 @@ namespace LTMCB_Lab06
                 (new Thread(roundStart)).Start();
             }
         }
+        private void roundStart()
+        {
+            Thread.Sleep(2000);
+            timeupCount = 0;
+            if (round == 0)
+            {
+                round = 5;
+                broadcast($"mGame sẽ có {round} vòng!");
+                currentRound = 1;
+            }
+            startRange = rand.Next(0, 11) * 10;
+            endRange = startRange + rand.Next(1, 6) * 10;
+            luckyNumber = rand.Next(startRange, endRange + 1);
+            broadcast($"m>>> Vòng {currentRound}: Nhập số trong khoảng [{startRange}, {endRange}].\n@@@Nextround!@@@{rand.Next(5, 11)}\t{startRange}\t{endRange}\t{luckyNumber}");
+            currentRound++;
+            correctPlayer = "";
+        }
         private void timeup()
         {
             string message;
@@ -331,23 +348,6 @@ namespace LTMCB_Lab06
             scoreBoard = scoreBoard.ToDictionary(p => p.Key, p => 0);
             round = 0;
             readyPlayers.Clear();
-        }
-        private void roundStart()
-        {
-            Thread.Sleep(2000);
-            timeupCount = 0;
-            if (round == 0)
-            {
-                round = rand.Next(5, 5);
-                broadcast($"mGame sẽ có {round} vòng!");
-                currentRound = 1;
-            }
-            startRange = rand.Next(0, 11) * 10;
-            endRange = startRange + rand.Next(1, 6) * 10;
-            luckyNumber = rand.Next(startRange, endRange + 1);
-            broadcast($"m>>> Vòng {currentRound}: Nhập số trong khoảng [{startRange}, {endRange}].\n@@@Nextround!@@@{rand.Next(5, 11)}\t{startRange}\t{endRange}\t{luckyNumber}");
-            currentRound++;
-            correctPlayer = "";
         }
         public void broadcast(string data, String except = "")
         {
